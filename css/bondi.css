@@ -1,0 +1,230 @@
+:root {
+  --dark: #19283f;
+  --green: #33d1cc;
+  --yellow: #ffc400;
+  --red: #ff3150;
+  --section-color: #eff7fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* Start Navbar */
+/* Start Component */
+.main-btn {
+  background-color: var(--red);
+  color: var(--yellow);
+  border: none;
+}
+.main-btn:hover {
+  background-color: var(--red);
+  color: var(--yellow);
+}
+.main-title::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background-color: var(--green);
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+/* End Component */
+nav {
+  background-color: var(--dark);
+  color: #fff;
+}
+nav .container {
+  position: relative;
+}
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+}
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+  color: var(--green);
+}
+.navbar button {
+  color: #fff;
+  border-color: #fff;
+}
+.navbar button:focus {
+  box-shadow: none;
+}
+@media (max-width: 992px) {
+  .navbar .navbar-collapse {
+    position: absolute;
+    top: 62px;
+    z-index: 5;
+    background-color: rgba(25, 40, 63, 0.7);
+    width: 100%;
+    left: 0px;
+    padding: 15px;
+  }
+}
+.navbar svg {
+  color: #fff;
+}
+.navbar .search {
+  border-left: 1px solid var(--green);
+  color: var(--green);
+  cursor: pointer;
+}
+.navbar .main-button:focus {
+  box-shadow: none;
+}
+/* End Navbar */
+/* Start Landing */
+.landing {
+  height: calc(100vh - 72px);
+  background-color: var(--dark);
+}
+/* End Landing */
+/* Start Features */
+.features .icon-holder {
+  height: 200px;
+}
+.features .icon-holder svg {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.features .icon-holder svg.number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+.features .icon-holder svg.icon {
+  color: var(--green);
+}
+/* End Features */
+/* Start Work */
+.work {
+  background-color: var(--section-color);
+}
+.work ul li {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.work ul li:not(.active):hover {
+  color: var(--yellow);
+  background-color: var(--red);
+}
+.work .box {
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.work .box::after {
+  content: attr(data-work);
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: hsl(178deg 63% 51% / 40%);
+  color: #fff;
+  left: -100%;
+  bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.work .box:hover::after {
+  left: 5px;
+}
+/* End Work */
+/* Start Stuff */
+.stuff .middle-paragraph {
+  width: 600px;
+  max-width: 100%;
+  margin: 40px auto 0;
+}
+/* End Stuff */
+/* Start Team */
+.team {
+  background-color: var(--section-color);
+}
+.team .head h2 {
+  color: var(--yellow);
+}
+.team .text h3 {
+  background-color: var(--green);
+  color: #fff;
+}
+.team .text blockquote {
+  padding: 15px 10px 10px;
+}
+/* End Team */
+/* Start Description */
+.descrip {
+  background-color: var(--dark);
+}
+/* End Description */
+/* Start Blog */
+.blog-box {
+  border: 1px solid #eee;
+}
+.blog a {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+/* End Blog */
+/* Start NewsLetter */
+.newsletter {
+  background-color: var(--yellow);
+}
+.newsletter input[type="text"] {
+  background-color: var(--yellow);
+  color: white;
+  border-bottom: 1px solid white !important;
+  font-size: 23px;
+}
+.newsletter input[type="text"]::placeholder {
+  color: #fff;
+  font-size: 20px;
+}
+.newsletter input[type="text"]:focus {
+  outline: none;
+}
+.newsletter a {
+  background-color: var(--dark) !important;
+  color: var(--yellow) !important;
+}
+/* End NewsLetter */
+/* Start Footer */
+.footer {
+  background-color: var(--dark);
+}
+.footer .copywright span:first-child {
+  color: var(--green);
+}
+.footer .copywright span:last-child {
+  color: var(--yellow);
+}
+/* End Footer */
